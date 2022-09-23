@@ -57,3 +57,53 @@ img {
 [data-control='slide'] li.active a {
   background: #e54;
 }
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.custom-controls li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  margin: 2px;
+  transition: 0.2s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.custom-controls li:hover,
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.arrow-nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  text-indent: -999px;
+  background: #fb5 url('../img/arrow.svg') no-repeat center center;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.arrow-nav button.prev {
+  transform: rotate(180deg);
+}
