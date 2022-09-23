@@ -10,7 +10,6 @@ img {
 
 .slide {
   display: flex;
-  transform: translateX(-100%);
 }
 
 .slide li {
